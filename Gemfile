@@ -46,6 +46,8 @@ group :development, :test do
   
   # RSpec
   gem 'rspec-rails'
+  gem 'ffaker', '~> 2.8'
+  gem 'factory_bot', '~> 4.8', '>= 4.8.2'
 
   # Bundler audit
   gem 'bundler-audit', require: false
