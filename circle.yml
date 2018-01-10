@@ -1,0 +1,16 @@
+machine:
+  ruby: 2.4.0
+  
+dependencies:
+  post:
+    - bundle exec bundle-audit update && bundle exec bundle-audit check
+
+test:
+  override:
+    - bundle exec rspec --color spec --format progress
+
+deployment:
+  staging:
+    branch: develop
+    commands:
+      - BRANCH_NAME=develop bundle exec cap staging deploy
