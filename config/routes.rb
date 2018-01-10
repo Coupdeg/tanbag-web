@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :dashboard do
+    get 'products/index'
+  end
+
   get 'about/index'
 
   resources :products
