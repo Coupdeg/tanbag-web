@@ -8,9 +8,3 @@ dependencies:
 test:
   override:
     - bundle exec rspec --color spec --format progress
-
-deployment:
-  staging:
-    branch: develop
-    commands:
-      - BRANCH_NAME=develop bundle exec cap staging deploy
