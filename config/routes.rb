@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/index'
+
   resources :products
   devise_for :users
   root to: 'landing#index'
