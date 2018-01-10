@@ -3,9 +3,9 @@ class CreateProducts < ActiveRecord::Migration[5.1]
     create_table :products do |t|
       t.string :name
       t.text :details
-      t.int :stock, default: 0
-      t.int :product_types, default: 0
-      t.int :price
+      t.integer :stock, default: 0
+      t.integer :product_types, default: 0
+      t.integer :price
       t.timestamps
     end
   end
