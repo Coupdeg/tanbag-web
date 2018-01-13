@@ -10,10 +10,9 @@
 		</a>
 	</div>
 	<div class="col-4 text-center navbar-menu">
-		<a class="col-4 text-center navbar-color-text i-search" href="#" id="search-button">
-			<i class="fa fa-search" aria-hidden="true"></i>			
-		</a>
+		<%= render partial: 'shared/search' %>
 		<a class="col-4 text-center navbar-color-text" href="/user/login" id="login">LOGIN</a>
+		<%= render partial: 'shared/cart' %>
 	</div>
 </nav>
 <div class="pos-f-t hidden-lg-up">
@@ -22,12 +21,9 @@
 			<a href="/" class="col-6">
 				<%= image_tag("navbar_logo.png", :class => "") %>
 			</a>
-			<a class="navbar-color-text i-search col-5 text-right navbar-menu" href="#" id="search-button">
+			<a class="col-4 text-center navbar-color-text i-search" href="#" id="search-button">
 				<i class="fa fa-search" aria-hidden="true"></i>			
 			</a>
-			<button class="navbar-toggler navbar-menu" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 		</div>
   </nav>
 	<div class="collapse" id="navbarToggleExternalContent">
