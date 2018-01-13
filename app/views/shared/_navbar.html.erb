@@ -17,15 +17,35 @@
 	</div>
 </nav>
 <div class="pos-f-t hidden-lg-up">
-  <div class="collapse" id="navbarToggleExternalContent">
+  <nav class="navbar navbar-inverse bg-inverse navbar-style">
+		<div class="row">
+			<a href="/" class="col-6">
+				<%= image_tag("navbar_logo.png", :class => "") %>
+			</a>
+			<a class="navbar-color-text i-search col-5 text-right navbar-menu" href="#" id="search-button">
+				<i class="fa fa-search" aria-hidden="true"></i>			
+			</a>
+			<button class="navbar-toggler navbar-menu" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+  </nav>
+	<div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-inverse p-4">
-      <h4 class="text-white">Collapsed content</h4>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link text-center navbar-color-text" href="/">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center navbar-color-text" href="/product/type=0">PRODUCTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center navbar-color-text" href="/about">ABOUT US</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center navbar-color-text" href="/user/login" id="login">LOGIN</a>
+				</li>
+			</ul>
     </div>
   </div>
-  <nav class="navbar navbar-inverse bg-inverse">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
 </div>
