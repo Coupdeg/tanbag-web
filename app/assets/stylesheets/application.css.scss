@@ -4,9 +4,14 @@
 // Font Awesome
 @import "font-awesome";
 
+@import "./app/navbar";
 
 html, body {
 height: 100%;
 margin: 0;
 background-color: white; 
+}
+img {
+	height: 65px;
+	width: 65px;
 }

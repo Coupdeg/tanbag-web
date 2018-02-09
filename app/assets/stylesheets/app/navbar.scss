@@ -1,0 +1,12 @@
+.navbar-banner {
+	background-color: #737377;
+}
+.nav-item-text {
+	align-self: center;
+	a {
+		color: white !important;
+		&:hover {
+			color: rgb(189, 189, 189) !important;
+		}
+	}
+}
