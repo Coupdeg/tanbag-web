@@ -5,11 +5,12 @@
 @import "font-awesome";
 
 @import "./app/navbar";
+@import "./app/footer.scss";
 
 html, body {
-height: 100%;
-margin: 0;
-background-color: white; 
+	height: 100%;
+	margin: 0;
+	background-color: white; 
 }
 img {
 	height: 65px;

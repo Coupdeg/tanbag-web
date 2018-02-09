@@ -1,1 +1,16 @@
-<h1>Hello Footer</h1>
+<nav class="footer navbar-light">
+	<div class="d-flex justify-content-start">
+		<%= image_tag("footer/coup_logo", class: "footer-center image-logo img-fluid footer-item-head") %>
+		<p class = "footer-center footer-items-space" style = "margin-bottom: 0px">tel	: xx-xxxx-xxxx</p>
+		<p class = "footer-center footer-items-space" style = "margin-bottom: 0px">email : test_coup@gmail.com</p>
+	</div>
+	<div class="d-flex justify-content-end">
+		<%= image_tag("footer/footer_license.png", class: "footer-center image-license img-fluid footer-items-space") %>
+		<a href="https://www.facebook.com/tanstudiochiangmai" class="footer-center">
+			<%= image_tag("footer/icon_facebook_grey.png", class: "image-social-icon img-fluid footer-items-space") %>
+		</a>
+		<a href="https://www.instagram.com/tan_studio_chiangmai" class="footer-center">
+			<%= image_tag("footer/icon_instagram_grey.png", class: "image-social-icon img-fluid footer-item-tail") %>
+		</a>
+	</div>
+</nav>
