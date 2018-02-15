@@ -34,9 +34,10 @@ gem 'jbuilder', '~> 2.5'
 #Postgresql
 gem 'pg', '~> 0.21.0'
 
-#Devise
+#Authentication
 gem 'devise', '~> 4.4'
 gem 'rails_admin', '~> 1.2'
+gem 'cancancan', '~> 2.1', '>= 2.1.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
