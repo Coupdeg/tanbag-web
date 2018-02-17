@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  namespace :dashboard do
-    get 'products/index'
-  end
 
   get 'about/index'
 
